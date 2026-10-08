@@ -21,8 +21,8 @@ class ExpenseDatabase {
 
     // Inisialisasi koneksi
     async init() {
-        const url = localStorage.getItem(APP_CONFIG.STORAGE_KEYS.SUPABASE_URL);
-        const key = localStorage.getItem(APP_CONFIG.STORAGE_KEYS.SUPABASE_KEY);
+        const url = localStorage.getItem(APP_CONFIG.STORAGE_KEYS.SUPABASE_URL) || APP_CONFIG.DEFAULT_SUPABASE_URL;
+        const key = localStorage.getItem(APP_CONFIG.STORAGE_KEYS.SUPABASE_KEY) || APP_CONFIG.DEFAULT_SUPABASE_KEY;
 
         // Inisialisasi local storage dengan data sampel jika masih kosong
         if (!localStorage.getItem(APP_CONFIG.STORAGE_KEYS.LOCAL_EXPENSES)) {

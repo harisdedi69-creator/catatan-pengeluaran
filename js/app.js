@@ -485,8 +485,8 @@ class ExpenseApp {
 
     // ==================== MODAL PENGATURAN SUPABASE ====================
     openSupabaseModal() {
-        const url = localStorage.getItem(APP_CONFIG.STORAGE_KEYS.SUPABASE_URL) || '';
-        const key = localStorage.getItem(APP_CONFIG.STORAGE_KEYS.SUPABASE_KEY) || '';
+        const url = localStorage.getItem(APP_CONFIG.STORAGE_KEYS.SUPABASE_URL) || APP_CONFIG.DEFAULT_SUPABASE_URL || '';
+        const key = localStorage.getItem(APP_CONFIG.STORAGE_KEYS.SUPABASE_KEY) || APP_CONFIG.DEFAULT_SUPABASE_KEY || '';
 
         document.getElementById('supabaseUrlInput').value = url;
         document.getElementById('supabaseKeyInput').value = key;

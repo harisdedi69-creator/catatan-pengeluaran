@@ -12,6 +12,9 @@ const APP_CONFIG = {
         THEME: 'catat_duit_theme'
     },
 
+    DEFAULT_SUPABASE_URL: 'https://xzavvpnzscweelpwyoab.supabase.co',
+    DEFAULT_SUPABASE_KEY: 'sb_publishable_ZHgvlChi80Kd5Qi2nX3v8g_9Yi1dSg1',
+
     DEFAULT_BUDGET: {
         daily: 100000,   // Rp 100.000 / hari
         monthly: 3000000 // Rp 3.000.000 / bulan
